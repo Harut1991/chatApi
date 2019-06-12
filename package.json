@@ -1,7 +1,7 @@
 {
-  "name": "typescript-restful-starter",
+  "name": "chatApi",
   "version": "0.1.0",
-  "description": "kit starter node application",
+  "description": "chat",
   "main": "server.js",
   "scripts": {
     "start": "npm run build && cd dist && cross-env NODE_ENV=PRODUCTION node -r dotenv/config Index.js",
@@ -10,17 +10,6 @@
     "build": "npm run clean && tsc --outDir dist && cp .env ./dist",
     "clean": "rimraf dist"
   },
-  "keywords": [
-    "node",
-    "express",
-    "typeorm",
-    "typescript",
-    "tslint",
-    "JWT",
-    "E2015"
-  ],
-  "author": "Hector Riquelme",
-  "license": "MIT",
   "dependencies": {
     "@types/dotenv": "^6.1.0",
     "@types/express": "^4.11.1",
