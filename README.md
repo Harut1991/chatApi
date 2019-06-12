@@ -2,7 +2,8 @@
 
 1. Download all dependencies.
 		npm install
-2. Edit the file ./config.ts with your own settings:
+2. Create mysql db
+3. Edit the file ./config.ts with your own settings:
 
 ```
 # Start App
