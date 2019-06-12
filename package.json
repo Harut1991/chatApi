@@ -6,7 +6,6 @@
   "scripts": {
     "start": "npm run build && cd dist && cross-env NODE_ENV=PRODUCTION node -r dotenv/config Index.js",
     "dev": "nodemon",
-    "test": "cross-env NODE_ENV=test mocha test/**/*.ts",
     "build": "npm run clean && tsc --outDir dist && cp .env ./dist",
     "clean": "rimraf dist"
   },
