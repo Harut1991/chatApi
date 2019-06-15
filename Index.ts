@@ -8,16 +8,8 @@ import { Server } from "./config/Server";
 
 dotenv.config({ path: resolve() + "/.env" });
 
-if (cluster.isMaster) {
-    console.log(`\n -------------------> RUN ${env.NODE_ENV} ENVIRONMENT \n`);
-    for (const _ of cpus()) {
-        cluster.fork();
-        if (!isProduction()) {
-            break;
-        }
-    }
-} else {
-    const port: number = Number(env.PORT) || config.PORT_APP || 3000;
+if (!cluster.isMaster) {
+    const port: any = Number(env.PORT) || config.PORT_APP || 3000;
     new Server().Start().then((server) => {
         server.listen(port);
         server.on("error", (error: any) => {
@@ -41,4 +33,12 @@ if (cluster.isMaster) {
             console.log("Server is running in process " + process.pid + " listening on PORT " + port + "\n");
         });
     });
+} else {
+    console.log(`\n -------------------> RUN ${env.NODE_ENV} ENVIRONMENT \n`);
+    for (const _ of cpus()) {
+        cluster.fork();
+        if (!isProduction()) {
+            break;
+        }
+    }
 }
