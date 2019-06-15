@@ -1,10 +1,9 @@
 import { createConnection } from "typeorm";
 import {Message, Room, User} from "../app/models";
-import {DIALECT } from "../config";
-
+import {DIALECT, isProduction} from "../config";
 export const Connection = createConnection({
     type: DIALECT,
-    database: `../chat.db`,
+    database: isProduction() ? `../../chat.db` : "../chat.db",
     entities: [
             User,
             Message,
