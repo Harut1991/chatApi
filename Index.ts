@@ -1,7 +1,7 @@
 import * as cluster from "cluster";
 import { cpus } from "os";
 import { env } from "process";
-import { config, isProduction } from "./config";
+import { isProduction } from "./config";
 import { Server } from "./config/Server";
 
 if (!cluster.isMaster) {
