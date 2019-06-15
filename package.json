@@ -4,11 +4,11 @@
   "description": "chat",
   "main": "server.js",
   "scripts": {
-    "start": "npm run build && cd dist && web: node Index.js",
+    "start": "npm run build && cd dist && node Index.js",
     "dev": "nodemon",
     "build": "npm run clean && tsc --outDir dist && cp .env ./dist",
     "clean": "rimraf dist",
-    "postinstall": "npm run build && cd dist && web: node Index.js"
+    "postinstall": "npm run build && cd dist && node Index.js"
   },
   "dependencies": {
     "@types/dotenv": "^6.1.0",
