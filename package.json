@@ -4,7 +4,7 @@
   "description": "chat",
   "main": "server.js",
   "scripts": {
-    "start": "npm run build && cd dist && pm2 start Index.js",
+    "start": "npm run build && cd dist && pm2 -f start Index.js",
     "dev": "nodemon",
     "build": "npm run clean && tsc --outDir dist && cp .env ./dist",
     "clean": "rimraf dist",
