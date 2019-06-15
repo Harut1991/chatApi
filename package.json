@@ -8,7 +8,7 @@
     "dev": "nodemon",
     "build": "npm run clean && tsc --outDir dist && cp .env ./dist",
     "clean": "rimraf dist",
-    "postinstall": "npm run build && cd dist && node Index.js"
+    "postinstall": "npm run build && cd dist"
   },
   "dependencies": {
     "@types/dotenv": "^6.1.0",
