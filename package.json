@@ -4,11 +4,7 @@
   "description": "chat",
   "main": "server.js",
   "scripts": {
-    "start": "npm run build && cd dist && cross-env NODE_ENV=PRODUCTION ",
-    "dev": "nodemon",
-    "build": "npm run clean && tsc --outDir dist && cp .env ./dist  && cross-env NODE_ENV=PRODUCTION ",
-    "clean": "rimraf dist",
-    "postinstall": "npm run build && cd dist"
+    "dev": "nodemon"
   },
   "dependencies": {
     "@types/dotenv": "^6.1.0",

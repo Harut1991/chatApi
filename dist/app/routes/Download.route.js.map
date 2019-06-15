@@ -1,0 +1,1 @@
+{"version":3,"file":"Download.route.js","sourceRoot":"","sources":["../../../app/routes/Download.route.ts"],"names":[],"mappings":";;AAAA,uCAAgC;AAChC,gDAAkD;AAElD,MAAa,aAAc,SAAQ,iBAAM;IACrC;QACI,KAAK,CAAC,gCAAkB,CAAC,CAAC;QAC1B,IAAI,CAAC,MAAM;aACN,GAAG,CAAC,MAAM,EAAE,IAAI,CAAC,OAAO,CAAC,gCAAkB,CAAC,SAAS,CAAC,QAAQ,CAAC,CAAC,CAAC;IAC1E,CAAC;CACJ;AAND,sCAMC"}

@@ -10,6 +10,7 @@
     "paths": {
       "*": [
         "node_modules/*",
+        "chat.db",
         "app/types/*"
       ]
     }
