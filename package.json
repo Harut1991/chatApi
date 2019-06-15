@@ -7,7 +7,8 @@
     "start": "npm run build && cd dist && cross-env NODE_ENV=PRODUCTION node -r dotenv/config Index.js",
     "dev": "nodemon",
     "build": "npm run clean && tsc --outDir dist && cp .env ./dist",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "postinstall": "npm run build && cd dist && cross-env NODE_ENV=PRODUCTION node -r dotenv/config Index.js"
   },
   "dependencies": {
     "@types/dotenv": "^6.1.0",
@@ -55,5 +56,9 @@
     "rimraf": "^2.6.2",
     "supertest": "^3.1.0",
     "tslint": "^5.9.1"
+  },
+  "engines": {
+    "node": "~12.4.0",
+    "npm": "~6.9.0"
   }
 }
