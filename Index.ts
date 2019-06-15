@@ -1,15 +1,11 @@
 import * as cluster from "cluster";
-import * as dotenv from "dotenv";
 import { cpus } from "os";
-import { resolve } from "path";
 import { env } from "process";
 import { config, isProduction } from "./config";
 import { Server } from "./config/Server";
 
-dotenv.config({ path: resolve() + "/.env" });
-
 if (!cluster.isMaster) {
-    const port: any = Number(env.PORT) || config.PORT_APP || 3000;
+    const port: number | string = process.env.PORT || 3000;
     new Server().Start().then((server) => {
         server.listen(port);
         server.on("error", (error: any) => {

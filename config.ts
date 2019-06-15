@@ -7,5 +7,5 @@ export function isProduction(): boolean {
 }
 
 export const config = {
-    PORT_APP: process.env.PORT || 9000,
+    PORT_APP: 3000,
 };
