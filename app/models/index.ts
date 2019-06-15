@@ -1,3 +1,5 @@
-import { Sample } from "./Sample.model";
+import { Message } from "./Message.model";
+import { Room } from "./Room.model";
+import { User } from "./User.model";
 
-export { Sample };
+export { User, Room, Message};

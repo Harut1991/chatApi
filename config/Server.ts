@@ -4,9 +4,9 @@ import * as express from "express";
 import * as http from "http";
 import * as methodOverride from "method-override";
 import * as morgan from "morgan";
+import * as path from "path";
 import { Connection } from "./Database";
 import { ROUTER } from "./Router";
-
 export class Server {
     private static ConnectDB(): Promise<any> {
         return Connection;
@@ -14,15 +14,18 @@ export class Server {
 
     private readonly app: express.Application;
     private readonly server: http.Server;
+    private readonly io: any;
 
     constructor() {
         this.app = express();
         this.server = http.createServer(this.app);
+        this.io = require("socket.io").listen(this.server);
     }
 
     public Start(): Promise<http.Server> {
         return Server.ConnectDB().then(() => {
             this.ExpressConfiguration();
+            this.IoConfiguration();
             this.ConfigurationRouter();
             return this.server;
         });
@@ -30,6 +33,38 @@ export class Server {
 
     public App(): express.Application {
         return this.app;
+    }
+
+    private IoConfiguration(): void {
+        const diceEntries = new Set();
+        this.io.on("connection", (socket: any) => {
+            socket.on("connection", (data: any) => {
+                socket.broadcast.emit("connection", data);
+            });
+
+            socket.on("username", (username: any) => {
+                socket.username = username;
+                diceEntries.add(username);
+                this.io.emit("username", [ ...diceEntries]);
+            });
+
+            socket.on("newuser", (user: any) => {
+                this.io.emit("newuser", user);
+            });
+
+            socket.on("typing", (data: any) => {
+                socket.broadcast.emit("typing", data);
+            });
+
+            socket.on("new_message", (data: any) => {
+                socket.broadcast.emit("new_message", data);
+            });
+
+            socket.on("disconnect", (username: any) => {
+                diceEntries.delete(socket.username);
+                socket.broadcast.emit("is_online", [ ...diceEntries]);
+            });
+        });
     }
 
     private ExpressConfiguration(): void {
@@ -43,6 +78,7 @@ export class Server {
             next();
         });
         this.app.use(morgan("combined"));
+        this.app.use("/public", express.static(path.join(__dirname, "../public")));
         this.app.use(cors());
         this.app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction): void => {
             err.status = 404;

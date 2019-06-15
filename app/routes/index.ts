@@ -1,3 +1,5 @@
-import { SampleRouter } from "./Sample.route";
+import { RoomRouter } from "./Room.route";
+import { UserRouter } from "./User.route";
+import { DownloadRoute } from "./Download.route";
 
-export { SampleRouter };
+export { RoomRouter, UserRouter, DownloadRoute};

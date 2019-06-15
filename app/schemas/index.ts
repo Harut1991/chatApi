@@ -1,3 +1,5 @@
-import { createSample, deleteSample, updateSample } from "./Sample.schemas";
+import { createMessage } from "./Message.schemas";
+import { createRoom } from "./Room.schemas";
+import { createUser } from "./User.schemas";
 
-export { createSample, deleteSample, updateSample };
+export { createUser, createRoom, createMessage};

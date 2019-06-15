@@ -1,3 +1,4 @@
-import { SampleRepository } from "./Sample.repository";
+import { RoomRepository } from "./Room.repository";
+import { UserRepository } from "./User.repository";
 
-export { SampleRepository };
+export { UserRepository, RoomRepository };

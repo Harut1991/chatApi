@@ -1,3 +1,5 @@
-import { SampleService } from "./Sample.service";
+import { MessageService } from "./Message.service";
+import { RoomService } from "./Room.service";
+import { UserService } from "./User.service";
 
-export { SampleService };
+export { UserService, RoomService, MessageService };

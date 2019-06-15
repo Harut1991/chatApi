@@ -1,5 +1,5 @@
 import * as express from "express";
-import { SampleRouter } from "../app/routes";
+import {DownloadRoute, RoomRouter, UserRouter} from "../app/routes";
 
 interface IROUTER {
     path: string;
@@ -7,10 +7,24 @@ interface IROUTER {
     handler: express.Router;
 }
 
-const Sample = new SampleRouter();
+const User = new UserRouter();
+const Room = new RoomRouter();
+const Download = new DownloadRoute();
 
-export const ROUTER: IROUTER[] = [ {
-    handler: Sample.router,
-    middleware: [],
-    path: "/",
-}];
+export const ROUTER: IROUTER[] = [
+    {
+        handler: User.router,
+        middleware: [],
+        path: "/users/",
+    },
+    {
+        handler: Room.router,
+        middleware: [],
+        path: "/room/",
+    },
+    {
+        handler: Download.router,
+        middleware: [],
+        path: "/download/",
+    },
+];

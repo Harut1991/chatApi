@@ -1,11 +1,14 @@
 import { createConnection } from "typeorm";
-import { Sample } from "../app/models";
+import {Message, Room, User} from "../app/models";
 import { config, DIALECT } from "../config";
 
 export const Connection = createConnection({
     database: config.DATABASE.DB,
+    charset: 'utf8mb4',
     entities: [
-        Sample,
+        User,
+        Message,
+        Room,
     ],
     host: config.DATABASE.SERVER,
     logging: false,

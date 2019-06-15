@@ -1,3 +1,5 @@
-import { SampleController } from "./Sample.controller";
+import { DownloadController } from "./Download.controller";
+import { RoomController } from "./Room.controller";
+import { UserController } from "./User.controller";
 
-export { SampleController };
+export { UserController, RoomController, DownloadController };

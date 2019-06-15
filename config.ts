@@ -3,11 +3,11 @@ import { env } from "process";
 export const DIALECT = "mysql";
 
 const LOCAL_CONFIGURATION = {
-    DB: "harut",
-    PASSWORD: "password",
+    DB: "node",
+    PASSWORD: "root",
     PORT_DB: 3306,
     SERVER: "127.0.0.1",
-    USER_DB: "newuser",
+    USER_DB: "regroup",
 };
 
 const PRODUCTION_CONFIGURATION = {
