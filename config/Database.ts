@@ -10,6 +10,5 @@ export const Connection = createConnection({
             Message,
             Room,
     ],
-    logging: true,
     synchronize: true,
 });

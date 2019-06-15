@@ -7,5 +7,5 @@ export function isProduction(): boolean {
 }
 
 export const config = {
-    PORT_APP: 8080,
+    PORT_APP: 8000,
 };
