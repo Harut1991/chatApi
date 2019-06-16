@@ -19,6 +19,11 @@ export class UserController extends Controller {
         return this.res.send(userList);
     }
 
+    public async get(): Promise<Response> {
+        const user = await this.userService.findByOne(this.req.params.id);
+        return this.res.send(user);
+    }
+
     public async create(): Promise<Response> {
         const { nickName, interest } = this.req.body as { nickName: string, interest: string };
         this.user.nickName = nickName;

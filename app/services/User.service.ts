@@ -12,6 +12,10 @@ export class UserService {
         return getCustomRepository(UserRepository).find();
     }
 
+    public findByOne(id: number): Promise<User> {
+        return getCustomRepository(UserRepository).findOne(id);
+    }
+
     public save(user: User): Promise<User> {
         return getCustomRepository(UserRepository).save(user);
     }
