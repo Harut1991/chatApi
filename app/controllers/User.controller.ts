@@ -25,13 +25,17 @@ export class UserController extends Controller {
     }
 
     public async create(): Promise<Response> {
-        const { nickName, interest } = this.req.body as { nickName: string, interest: string };
+        const { nickName, interest, ip } = this.req.body as { nickName: string, interest: string, ip: string };
         this.user.nickName = nickName;
         this.user.interest = interest;
+        this.user.ip = ip ? ip : null;
         try {
 
             const unique = await this.userService.findByNickName(this.user.nickName);
-            if (unique.length) {
+            if (unique) {
+                if (unique.ip && ip && unique.ip === ip) {
+                    return this.res.status(200).send(unique);
+                }
                 return this.res.status(409).send({ message: "User already exists" });
             }
             const result = await this.userService.save(this.user);

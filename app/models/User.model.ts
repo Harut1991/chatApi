@@ -12,4 +12,7 @@ export class User extends BaseEntity {
     @Column("text")
     public interest: string;
 
+    @Column({type: "text", nullable: true})
+    public ip: string;
+
 }

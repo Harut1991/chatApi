@@ -4,7 +4,7 @@ import {UserRepository} from "../repository";
 
 export class UserService {
 
-    public findByNickName(text: string): Promise<User[]> {
+    public findByNickName(text: string): Promise<User> {
         return getCustomRepository(UserRepository).findByNickName(text);
     }
 
