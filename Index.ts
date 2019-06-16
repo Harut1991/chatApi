@@ -1,8 +1,8 @@
 import * as cluster from "cluster";
-import { cpus } from "os";
-import { env } from "process";
-import { isProduction } from "./config";
-import { Server } from "./config/Server";
+import {cpus} from "os";
+import {env} from "process";
+import {isProduction} from "./config";
+import {Server} from "./config/Server";
 
 if (!cluster.isMaster) {
     const port: number | string = process.env.PORT || 3000;

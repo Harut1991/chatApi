@@ -8,6 +8,6 @@ export class UserRouter extends Router {
         this.router
             .get("/", this.handler(UserController.prototype.all))
             .get("/:id", this.handler(UserController.prototype.get))
-            .post("/", [ validator(createUser) ], this.handler(UserController.prototype.create));
+            .post("/", [validator(createUser)], this.handler(UserController.prototype.create));
     }
 }

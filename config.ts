@@ -1,4 +1,4 @@
-import { env } from "process";
+import {env} from "process";
 
 export const DIALECT = "sqlite";
 

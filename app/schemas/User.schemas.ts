@@ -1,4 +1,4 @@
-import { object, string } from "joi";
+import {object, string} from "joi";
 
 export const createUser = object().keys({
     interest: string().required(),

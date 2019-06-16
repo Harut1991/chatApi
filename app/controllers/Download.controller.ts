@@ -1,5 +1,5 @@
-import { Controller } from "camesine";
-import { Request, Response } from "express";
+import {Controller} from "camesine";
+import {Request, Response} from "express";
 import * as path from "path";
 
 export class DownloadController extends Controller {

@@ -1,4 +1,4 @@
-import { getCustomRepository } from "typeorm";
+import {getCustomRepository} from "typeorm";
 import {Room} from "../models";
 import {RoomRepository} from "../repository";
 

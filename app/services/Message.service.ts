@@ -1,4 +1,4 @@
-import { getCustomRepository } from "typeorm";
+import {getCustomRepository} from "typeorm";
 import {Message} from "../models";
 import {MessageRepository} from "../repository/Message.repository";
 
