@@ -34,15 +34,14 @@ export class UserController extends Controller {
             const unique = await this.userService.findByNickName(this.user.nickName);
             if (unique) {
                 if (unique.ip && ip && unique.ip === ip) {
-                    return this.res.status(200).send(unique);
+                    return this.res.status(200).send({user: unique, exist: true});
                 }
                 return this.res.status(409).send({ message: "User already exists" });
             }
             const result = await this.userService.save(this.user);
-            return this.res.status(200).send(result);
+            return this.res.status(200).send({user: result, exist: false});
         } catch (ex) {
             return this.res.status(404).send({ message: "ERROR" });
         }
     }
-
 }
