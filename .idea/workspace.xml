@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d442db7f-bc3b-45c0-9066-67a00e80331f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/User.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/User.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat.db" beforeDir="false" afterPath="$PROJECT_DIR$/chat.db" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/User.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+            <state relative-caret-position="399">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -235,52 +234,6 @@
               <item name="chatApi" type="b2602c69:ProjectViewProjectNode" />
               <item name="chatApi" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="chatApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="schemas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApi" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -355,12 +308,12 @@
       <workItem from="1560512970097" duration="14876000" />
       <workItem from="1560539132890" duration="3964000" />
       <workItem from="1560578372915" duration="12590000" />
-      <workItem from="1560669502613" duration="7896000" />
+      <workItem from="1560669502613" duration="8574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82020000" />
+    <option name="totallyTimeSpent" value="82698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -734,8 +687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/User.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+        <state relative-caret-position="399">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
