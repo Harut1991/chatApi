@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d442db7f-bc3b-45c0-9066-67a00e80331f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Download.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Download.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/User.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/User.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repository/Message.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/repository/Message.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repository/Room.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/repository/Room.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repository/User.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/repository/User.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repository/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/repository/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/Room.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/Room.route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/User.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/User.route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/User.schemas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/User.schemas.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/Message.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/Message.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/Room.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/Room.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/User.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/User.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/Database.ts" afterDir="false" />
-    </list>
+    <list default="true" id="d442db7f-bc3b-45c0-9066-67a00e80331f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -373,11 +352,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82867000" />
+    <option name="totallyTimeSpent" value="83464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
