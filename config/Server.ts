@@ -56,8 +56,12 @@ export class Server {
                 socket.broadcast.emit("typing", data);
             });
 
-            socket.on("new_message", (data: any) => {
-                socket.broadcast.emit("new_message", data);
+            socket.on("newMessage", (data: any) => {
+                socket.broadcast.emit("newMessage", data);
+            });
+
+            socket.on("newMessageByUsersId", (data: any) => {
+                socket.broadcast.emit("newMessageByUsersId", data);
             });
 
             socket.on("disconnect", (username: any) => {
